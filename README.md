@@ -16,13 +16,13 @@ sudo apt install nala
 - WSL
 
 ```text
-bat git htop ncdu neofetch nodejs npm python3-pip thefuck tldr vim wget zip fzf
+bat curl git htop ncdu neofetch nodejs npm python3-pip rsync thefuck tldr vim wget zip fzf
 ```
 
 - Workstation
 
 ```text
-bat firefox flatpak git gparted htop ncdu neofetch nodejs npm python3-pip software-properties-common thefuck tldr vim wget zip fzf
+bat curl firefox flatpak git gparted gufw htop ncdu neofetch nodejs npm python3-pip rsync software-properties-common timeshift thefuck tldr vim wget zip fzf
 ```
 
 - Gaming:
