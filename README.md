@@ -77,14 +77,14 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 ```
 
-- [autocompletions](https://github.com/zsh-users/zsh-completions)
-
 - [syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 ```sh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
 echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 ```
+
+- tab completions - add `autoload -Uz compinit && compinit` to your `.zshrc` file
 
 </details>
 
