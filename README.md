@@ -4,6 +4,7 @@ Steps and commands after installation to be set and ready in a WSL instance or c
 
 ## Software
 
+These packages are usually in the repositories of the distribution, use the package manager of your liking.
 For Debian & Ubuntu derivatives I prefer nala over apt. It's just a front-end to apt, more readable, faster and nicer to use. Feel free to replace nala with apt if you are not using it. [Here is the repository](https://gitlab.com/volian/nala)
 
 ```sh
@@ -14,14 +15,14 @@ sudo apt install nala
 
 - WSL
 
-```sh
-sudo nala install bat git htop ncdu neofetch nodejs npm python3-pip thefuck tldr vim vscode wget zip fzf
+```text
+bat git htop ncdu neofetch nodejs npm python3-pip thefuck tldr vim vscode wget zip fzf
 ```
 
 - Workstation
 
-```sh
-sudo nala install bat firefox flatpak git gparted htop ncdu neofetch nodejs npm python3-pip software-properties-common thefuck tldr vim wget zip fzf
+```text
+bat firefox flatpak git gparted htop ncdu neofetch nodejs npm python3-pip software-properties-common thefuck tldr vim wget zip fzf
 ```
 
 - Gaming:
@@ -190,8 +191,8 @@ Depanding on the Desktop Environment, some additional software can be needed to 
 
 ### Gnome software
 
-```sh
-sudo nala install gnome-tweaks gnome-shell-extensions
+```text
+gnome-tweaks gnome-shell-extensions
 ```
 
 ```sh
