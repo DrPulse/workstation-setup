@@ -5,25 +5,40 @@ Steps and commands after installation to be set and ready in a WSL instance or c
 ## Software
 
 For Debian & Ubuntu derivatives I prefer nala over apt. It's just a front-end to apt, more readable, faster and nicer to use. Feel free to replace nala with apt if you are not using it. [Here is the repository](https://gitlab.com/volian/nala)
-Installation : `sudo apt install nala`
+
+```sh
+sudo apt install nala
+```
 
 ### Deb packages
 
-- WSL:
-`sudo nala bat git htop ncdu neofetch nodejs npm python3-pip thefuck tldr vim vscode wget zip fzf`
+- WSL
 
-- Workstation:
-`sudo nala install bat firefox flatpak git gparted htop ncdu neofetch nodejs npm python3-pip software-properties-common thefuck tldr vim wget zip fzf`
+```sh
+sudo nala install bat git htop ncdu neofetch nodejs npm python3-pip thefuck tldr vim vscode wget zip fzf
+```
+
+- Workstation
+
+```sh
+sudo nala install bat firefox flatpak git gparted htop ncdu neofetch nodejs npm python3-pip software-properties-common thefuck tldr vim wget zip fzf
+```
 
 - Gaming:
 
 ### Flatpak packages
 
-- Workstation:
-`flatpak install flathub io.missioncenter.MissionCenter com.github.tchx84.Flatseal com.visualstudio.code org.onlyoffice.desktopeditors org.videolan.VLC org.filezillaproject.Filezilla com.getpostman.Postman org.kde.krita com.usebottles.bottles com.github.jeromerobert.pdfarranger`
+- Workstation
 
-- Gaming:
-`flatpak install flathub com.valvesoftware.Steam com.discordapp.Discord com.heroicgameslauncher.hgl net.lutris.Lutris`
+```sh
+flatpak install flathub io.missioncenter.MissionCenter com.github.tchx84.Flatseal com.visualstudio.code org.onlyoffice.desktopeditors org.videolan.VLC org.filezillaproject.Filezilla com.getpostman.Postman org.kde.krita com.usebottles.bottles com.github.jeromerobert.pdfarranger
+```
+
+- Gaming
+
+```sh
+flatpak install flathub com.valvesoftware.Steam com.discordapp.Discord com.heroicgameslauncher.hgl net.lutris.Lutris
+```
 
 ## Shell
 
@@ -41,7 +56,12 @@ Prefered shell, not using oh-my-zsh. I prefer to include plugins manually in the
 ### [Installation](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
 1. Installation:
-ZSH is available through a lot of package managers (apt, pacman, dnf...) check documentation. For debian based distros : `sudo nala install zsh`
+ZSH is available through a lot of package managers (apt, pacman, dnf...) check documentation. For debian based distros :
+
+    ```sh
+    sudo nala install zsh
+    ```
+
 2. Verify installation by running `zsh --version`
 3. Make it the default shell with `chsh -s $(which zsh)` or `sudo lchsh $USER` if the distro is Fedora.
 4. Log out and log back in again to use your new default shell.
@@ -51,13 +71,20 @@ ZSH is available through a lot of package managers (apt, pacman, dnf...) check d
 ### Plugins
 
 - [autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-  - `git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions`
-  - `echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
+
+```sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+```
+
 - [autocompletions](https://github.com/zsh-users/zsh-completions)
-  - a
+
 - [syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-  - `git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting`
-  - `echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
+
+```sh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+```
 
 </details>
 
@@ -90,15 +117,24 @@ Download with gui:
 Prefered prompt, cross shell, only one config in a single file to to.
 
 1. Installation
-Starship is available through some package managers (pacman, dnf, brew, nix) and with cargo. Check documentation. Otherwise : `curl -sS https://starship.rs/install.sh | sh`
+Starship is available through some package managers (pacman, dnf, brew, nix) and with cargo. Check documentation. Otherwise :
+
+    ```sh
+    curl -sS https://starship.rs/install.sh | sh
+    ```
+
 2. Shell setup
 Starship is usually initialized at the end of a shell configuration.
-    - Bash: `echo 'eval "$(starship init bash)"' >> ~/.bashrc`
-    - ZSH : `echo 'eval "$(starship init zsh)"' >> ~/.zshrc`
+    - Bash: ```echo 'eval "$(starship init bash)"' >> ~/.bashrc```
+    - ZSH : ```echo 'eval "$(starship init zsh)"' >> ~/.zshrc```
     - Others : check the documentation
 3. Configuration
-Starship uses a single TOML file to store the configuration, create the following firectory and file:
-`mkdir -p ~/.config && touch ~/.config/starship.toml`
+Starship uses a single TOML file to store the configuration, create the following firectory and file :
+
+```sh
+mkdir -p ~/.config && touch ~/.config/starship.toml
+```
+
 Then edit the file according to the documentation or replace it with your own file.
 
 - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
@@ -109,7 +145,7 @@ powerlevel10k requires the MesloLGS NerdFont in the regular, bold, italic and bo
 1. Installation
 powerlevel10k can be installed in many ways like with homebrew, oh my zsh, yay... heck documentation. Otherwise:
 
-```bash
+```sh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 source ~/.zshrc
@@ -129,8 +165,8 @@ Dotfiles are niceto have in a dedicated repo. I prefer to use [chezmoi](https://
 
 1. Installation
 chezmoi can be installed in many ways like with homebrew, nix, pacman... check documentation. Otherwise there are two ways:.
-    - curl : `sh -c "$(curl -fsLS get.chezmoi.io)"`
-    - wget : `sh -c "$(wget -qO- get.chezmoi.io)"`
+    - curl : ```sh -c "$(curl -fsLS get.chezmoi.io)"```
+    - wget : ```sh -c "$(wget -qO- get.chezmoi.io)"```
 Note : If you already have a repository set up, you can append `-- init --apply $GITHUB_USERNAME` to the installation command to pull the files from the repo.
 
 2. Verify the installation
@@ -154,8 +190,13 @@ Depanding on the Desktop Environment, some additional software can be needed to 
 
 ### Gnome software
 
-`sudo nala install gnome-tweaks gnome-shell-extensions`
-`flatpak install com.mattjakeman.ExtensionManager io.github.realmazharhussain.GdmSettings`
+```sh
+sudo nala install gnome-tweaks gnome-shell-extensions
+```
+
+```sh
+flatpak install com.mattjakeman.ExtensionManager io.github.realmazharhussain.GdmSettings
+```
 
 ### Extensions
 
