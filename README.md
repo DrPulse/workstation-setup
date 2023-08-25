@@ -16,7 +16,7 @@ sudo apt install nala
 - WSL
 
 ```text
-bat git htop ncdu neofetch nodejs npm python3-pip thefuck tldr vim vscode wget zip fzf
+bat git htop ncdu neofetch nodejs npm python3-pip thefuck tldr vim wget zip fzf
 ```
 
 - Workstation
