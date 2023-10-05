@@ -27,6 +27,18 @@ bat curl firefox flatpak git gparted gufw htop ncdu neofetch nodejs npm python3-
 
 - Gaming:
 
+```text
+steam lutris
+```
+
+- Optionnal:
+
+codecs:
+
+```text
+ubuntu-restricted-extras
+```
+
 ### Flatpak packages
 
 - Workstation
@@ -38,7 +50,7 @@ flatpak install flathub io.missioncenter.MissionCenter com.github.tchx84.Flatsea
 - Gaming
 
 ```sh
-flatpak install flathub com.valvesoftware.Steam com.discordapp.Discord com.heroicgameslauncher.hgl net.lutris.Lutris
+flatpak install flathub com.discordapp.Discord com.heroicgameslauncher.hgl
 ```
 
 ## Shell
